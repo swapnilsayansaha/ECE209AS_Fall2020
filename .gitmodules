@@ -1,0 +1,3 @@
+[submodule "Baselines/Classic_T9_Numpad/Arduino_side/T9_Texting/MultitapKeypad"]
+	path = Baselines/Classic_T9_Numpad/Arduino_side/T9_Texting/MultitapKeypad
+	url = https://github.com/ZulNs/MultitapKeypad
