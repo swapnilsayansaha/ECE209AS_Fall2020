@@ -1,5 +1,4 @@
-# GUI-GAN: Towards an interactive graphical framework for privacy-preserving artificial data
-synthesis and imputation using generative adversarial networks.
+# GUI-GAN: Towards an interactive graphical framework for privacy-preserving artificial data synthesis and imputation using generative adversarial networks.
 
 In this project, we design a real-time and interactive graphical user interface (GUI) framework for synthesizing large time-series datasets from moderately-sized input datasets using Generative Adversarial Networks (GANs) called GUI-GAN. Specifically, we illustrate a generalizable graphical pipeline powered by a deep-learning backend that allows non-experts to generate synthetic sensory data while parameterizing synthetic data statistics via graphical tools. In addition, the framework allows the user to symbolically specify rectification statistics of generated data, which is then fed to another generative deep-learning pipeline for data imputation based on user-corrections.
 
