@@ -1,6 +1,0 @@
-[submodule "Baselines/Classic_T9_Numpad/Arduino_side/T9_Texting/MultitapKeypad"]
-	path = Baselines/Classic_T9_Numpad/Arduino_side/T9_Texting/MultitapKeypad
-	url = https://github.com/ZulNs/MultitapKeypad
-[submodule "T9_predictive_demo_Arduino/T9_Texting/MultitapKeypad"]
-	path = T9_predictive_demo_Arduino/T9_Texting/MultitapKeypad
-	url = https://github.com/ZulNs/MultitapKeypad
