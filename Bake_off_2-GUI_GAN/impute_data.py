@@ -17,11 +17,11 @@ import data_utils
 from gain import gain_t
 from utils import binary_sampler
 
-# hyperparameters: 1. dataset directory 2. data type (.mat or .csv) 3. vector to be imputed
+# hyperparameters: 1. data file (numpy) 2. data type (.mat or .csv) 3. vector to be imputed
 #4. missing data rate during training 5. batch size 6. hint rate 7. alpha 8. no. of epochs
 # more hyperparameters will be added after mid term
 
-def impute_data(orig_data = 'dataset/ecg_data/1 NSR/',
+def impute_data(orig_data,
                 data_type = '.mat',
                 inp_data = [],
                 miss_rate=0.3,
@@ -30,7 +30,7 @@ def impute_data(orig_data = 'dataset/ecg_data/1 NSR/',
                 alpha = 100,
                 iterations = 10000):
     #use original data used to train SenseGen and emulate missing data in it for GAIN training
-    orig_data = np.transpose(data_utils.load_training_data(orig_data,data_type))
+    orig_data = np.transpose(orig_data)
     data_m = binary_sampler(1-miss_rate, orig_data.shape[0], orig_data.shape[1])
     train_data = orig_data.copy()
     train_data[data_m == 0] = np.nan
