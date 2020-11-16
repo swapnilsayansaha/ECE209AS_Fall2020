@@ -18,17 +18,17 @@ import numpy as np
 import glob
 import os
 
-# hyperparameters: 1. dataset directory 2. data type (.mat or .csv) 3. number of synthetic sequences to be generated 
+# hyperparameters: 1. dataset file (numpy) 2. data type (.mat or .csv) 3. number of synthetic sequences to be generated 
 # 4. at what epochs to save model 5. training epoch 6. model output dir
 # more hyperparameters will be added after mid term
 
-def gen_data_GAN(data_dir = 'dataset/ecg_data/1 NSR/', 
+def gen_data_GAN(data, 
                  data_type = '.mat', 
                  num_seq = 10, 
                  model_chkpoint = 100,
                  num_epochs = 200, 
                  out_dir = 'models/'):
-    data = data_utils.load_training_data(data_dir,data_type)
+    #data = data_utils.load_training_data(data_dir,data_type)
     model_utils.reset_session_and_model()
     with tf.Session() as sess:
         train_config = model.ModelConfig()
