@@ -18,14 +18,19 @@ import numpy as np
 import os
 import sys
 from scipy.io import loadmat
+from zipfile import ZipFile
 
-
-def load_training_data(data_dir='dataset/ecg_data/1 NSR/', data_type='.mat'):
+#dataset is a zip file
+def load_training_data(data_file, data_type='.mat'):
     """ Returns a matrix of training data.
     shape of result = (n_exp, len)
     """
     print('Loading dataset...')
     if(data_type=='.csv'):
+        t = [i for i, letter in enumerate(data_file) if letter == '/']
+        with ZipFile(data_file, 'r') as zipObj:
+            zipObj.extractall(data_file[:t[-1]+1])
+        data_dir = data_file[:-4]
         data_files = [f for f in os.listdir(data_dir) if f.endswith('.csv')]
         data_list = []
         for fname in data_files:
@@ -36,6 +41,10 @@ def load_training_data(data_dir='dataset/ecg_data/1 NSR/', data_type='.mat'):
         print('Loaded dataset.')
         return data
     else:
+        t = [i for i, letter in enumerate(data_file) if letter == '/']
+        with ZipFile(data_file, 'r') as zipObj:
+            zipObj.extractall(data_file[:t[-1]+1])
+        data_dir = data_file[:-4]
         data_files = [f for f in os.listdir(data_dir) if f.endswith('.mat')]
         data_list = []
         for fname in data_files:
