@@ -1,6 +1,6 @@
 # HMM-T9: GUI-GAN: Towards an interactive graphical framework for privacy-preserving artificial data synthesis and imputation using generative adversarial networks.
 
-Elevator Pitch: We have designed a graphical framework for generating large amounts of realistic but privacy-preserving synthetic sensory data from limited real-world data in any discipline, while also allowing the user to modify the generated data using graphical tools.
+*Elevator Pitch: We have designed a graphical framework for generating large amounts of realistic but privacy-preserving synthetic sensory data from limited real-world data in any discipline, while also allowing the user to modify the generated data using graphical tools.*
 
 GUI-GAN is a real-time and interactive graphical user interface (GUI) framework for synthesizing large time-series datasets from moderately-sized input datasets using Generative Adversarial Networks (GANs). Specifically, we illustrate a generalizable graphical pipeline powered by a deep-learning backend that allows non-experts to generate synthetic sensory data while parameterizing synthetic data statistics via graphical tools. In addition, the framework allows the user specify rectification statistics of generated data via graphs and symbols, which is then fed to another generative deep-learning pipeline for data imputation based on user-corrections. Features of the framework are:
 
