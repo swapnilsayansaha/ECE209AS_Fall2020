@@ -10,3 +10,8 @@ For data synthesis, we input the data and user conditions to a VAE generator bas
 
 ![Device_Image](Images/story_f20hci.png)
 ![Device_Image](Images/209as_prop_2020.png)
+
+References:
+1. Alzantot, Moustafa Farid Taha Mohammed. “Secure and Private Machine Learning for Smart Devices”. Ph.D. Diss. UCLA, 2019.
+2. Yoon, Jinsung, James Jordon, and Mihaela van der Schaar. " GAIN: Missing Data Imputation using Generative Adversarial Nets. " International Conference on Machine Learning (ICML). 2018.
+3. Alzantot, Moustafa, Supriyo Chakraborty, and Mani Srivastava. "Sensegen: A deep learning architecture for synthetic sensor data generation." 2017 IEEE International Conference on Pervasive Computing and Communications Workshops (PerCom Workshops). IEEE, 2017.
